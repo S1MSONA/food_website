@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import DefualtLayout from "../layout/DefualtLayout";
 import Navigation from "../nav/navigation";
 import Home from "../Pages/Home";
@@ -13,12 +13,17 @@ function App() {
       <DefualtLayout>
         <Router>
           <Navigation />
-          <Switch>
-            <Route exact path="/" Component={Home} />
-            <Route path="/menu" Component={Menu} />
-            <Route path="/About" Component={About} />
-            <Route path="/contact" Component={Contact} />
-          </Switch>
+
+          {/* <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/menu">
+              <Menu />
+            </Route>
+            <Route path="/About" component={About} />
+            <Route path="/contact" omponent={Contact} />
+          </Switch> */}
         </Router>
       </DefualtLayout>
     </>
