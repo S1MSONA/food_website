@@ -1,7 +1,5 @@
 .container {
   width: 100%;
   position: relative;
-  background-color: dodgerblue;
-  padding: 15px 20px;
-  color: #fff;
+  padding: 10px;
 }

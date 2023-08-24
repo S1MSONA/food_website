@@ -5,7 +5,7 @@ const DefualtLayout = (props) => {
   const { children } = props;
   return (
     <div className="container">
-      <h1>{children}</h1>
+      <>{children}</>
     </div>
   );
 };

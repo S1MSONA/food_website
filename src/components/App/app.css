@@ -12,3 +12,27 @@ body {
   background-color: #fff;
   color: inherit;
 }
+
+p,
+a,
+li,
+span {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+.container-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* top-page */
+.nav_lists {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+.nav_links {
+  color: #fff;
+}
