@@ -6,16 +6,19 @@ import Home from "../Pages/Home";
 import Menu from "../Pages/Menu";
 import Contact from "../Pages/Contact";
 import About from "../Pages/About";
+import Hero from "../Body/Hero";
 function App() {
   return (
     <div>
       <DefualtLayout>
         <Navigation />
       </DefualtLayout>
-      <About />
-      <Home />
-      <Menu />
-      <Contact />
+      <Hero>
+        <Home />
+        <Menu />
+        <About />
+        <Contact />
+      </Hero>
     </div>
   );
 }
