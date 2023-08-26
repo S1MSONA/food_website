@@ -1,32 +1,33 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <nav className="navigation">
       <div className="logo">Food Website</div>
       <ul className="nav-lists">
         <li>
-          <NavLink exact to="/" className={"nav-links"}>
+          <Link to="/home" className={"nav-links"}>
             Home
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink exact to="/menu" className={"nav-links"}>
+          <Link to="/menu" className={"nav-links"}>
             Menu
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink exact to="/about" className={"nav-links"}>
+          <Link to="/about" className={"nav-links"}>
             About
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink exact to="/contact" className={"nav-links"}>
+          <Link to="/contact" className={"nav-links"}>
             Contact
-          </NavLink>
+          </Link>
         </li>
+        {props.children}
       </ul>
     </nav>
   );
