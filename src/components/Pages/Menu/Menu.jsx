@@ -3,7 +3,7 @@ import React from "react";
 const Menu = () => {
   return (
     <div>
-      <h1 style={{ marginTop: "100px" }}>Menu</h1>
+      <h1 style={{ margintTop: "100px" }}>Welcome to Menu page</h1>
     </div>
   );
 };

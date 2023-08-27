@@ -1,11 +1,8 @@
 import React from "react";
+import "./home.css";
 
 const Home = () => {
-  return (
-    <div>
-      <h1 style={{ marginTop: "100px" }}>Hello Home Page</h1>
-    </div>
-  );
+  return <div className="container"></div>;
 };
 
 export default Home;
