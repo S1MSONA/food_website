@@ -24,6 +24,10 @@ span {
 a {
   text-decoration: none;
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .container-width {
   max-width: 1200px;
   margin: 0 auto;
